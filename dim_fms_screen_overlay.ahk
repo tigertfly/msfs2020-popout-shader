@@ -125,6 +125,8 @@ Gui, FMS: Default
 Gui, Color, 0x000000 ; Color to black
 Gui, +LastFound +AlwaysOnTop -Caption +E0x20 ; Click through GUI always on top.
 WinSet, Transparent, %overlay_opacity% ; Set intensity first based on the time of dday
+; EDIT your coordinates here. The first two are X,Y of your external monitor top left in the
+; virtual desktop space (my monitor is ultrawide, thus huge horizontal value)
 Gui, FMS:Show, x3200 y1200 w640 h480, Overlay ; FMC on second monitor
 
 ; if you want another one
