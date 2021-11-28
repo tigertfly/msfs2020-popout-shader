@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MobiflightConnector>
+  <outputs>
+    <config guid="1ebe9bd1-1190-45a9-8033-2a8654e923c1">
+      <active>true</active>
+      <description>FMC Screen brightness value for AutoHotkey (MFScreenBrightness)</description>
+      <settings msdata:InstanceType="MobiFlight.OutputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <source type="Variable" varType="number" varName="MFScreenBrightness" varExpression="$" />
+        <comparison active="False" value="" operand="" ifValue="" elseValue="" />
+        <display type="" serial="-" trigger="normal" pin="" pinBrightness="255" />
+        <preconditions />
+        <transformation active="False" expression="$" substrStart="0" substrEnd="7" />
+        <configrefs />
+      </settings>
+    </config>
+  </outputs>
+  <inputs>
+    <config guid="8ba9b7c1-5dd7-4757-bb6a-8bd52b7a9716">
+      <active>true</active>
+      <description>FMC Screen Brightness POT</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <button>
+          <onPress type="KeyInputAction" key="G" />
+          <onRelease />
+        </button>
+        <analog>
+          <onChange type="VariableInputAction" varType="number" varName="MFScreenBrightness" varExpression="(1023 - @ ) / 102.3 + 1" />
+        </analog>
+        <preconditions />
+        <configrefs>
+          <configref active="False" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="58777751-9aa1-49d5-aedc-5ae05d59777f">
+      <active>true</active>
+      <description>FMC Screen Brightnes Key 1</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="KeyInputAction" key="Ctrl+Shift+D1" />
+        </analog>
+        <preconditions>
+          <precondition type="config" active="true" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" operand="=" value="1" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="False" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="501bce0b-4471-44eb-8742-8f3519cb552f">
+      <active>true</active>
+      <description>FMC Screen Brightnes Key 2</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="KeyInputAction" key="Ctrl+Shift+D2" />
+        </analog>
+        <preconditions>
+          <precondition type="config" active="true" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" operand="=" value="2" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="False" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="1fee3b90-1771-4213-b32b-2c240e3a16ad">
+      <active>true</active>
+      <description>FMC Screen Brightnes Key 3</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="KeyInputAction" key="Ctrl+Shift+D3" />
+        </analog>
+        <preconditions>
+          <precondition type="config" active="true" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" operand="=" value="3" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="False" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="84eeacea-f64b-45f6-93a0-4a1166045a31">
+      <active>true</active>
+      <description>FMC Screen Brightnes Key 4</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="KeyInputAction" key="Ctrl+Shift+D4" />
+        </analog>
+        <preconditions>
+          <precondition type="config" active="true" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" operand="=" value="4" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="False" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="e61d48f7-0494-45de-b5b7-1bf340b82606">
+      <active>true</active>
+      <description>FMC Screen Brightnes Key 5</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="KeyInputAction" key="Ctrl+Shift+D5" />
+        </analog>
+        <preconditions>
+          <precondition type="config" active="true" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" operand="=" value="5" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="False" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="752d8851-b63b-4cf7-b6c1-a9460b98a785">
+      <active>true</active>
+      <description>FMC Screen Brightnes Key 6</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="KeyInputAction" key="Ctrl+Shift+D6" />
+        </analog>
+        <preconditions>
+          <precondition type="config" active="true" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" operand="=" value="6" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="False" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="2f02859d-7925-4498-9b7c-b73581c9d8d0">
+      <active>true</active>
+      <description>FMC Screen Brightnes Key 7</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="KeyInputAction" key="Ctrl+Shift+D7" />
+        </analog>
+        <preconditions>
+          <precondition type="config" active="true" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" operand="=" value="7" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="False" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="7cb0ed91-e2c4-4561-86c5-4ad7d33522d5">
+      <active>true</active>
+      <description>FMC Screen Brightnes Key 8</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="KeyInputAction" key="Ctrl+Shift+D8" />
+        </analog>
+        <preconditions>
+          <precondition type="config" active="true" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" operand="=" value="8" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="False" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="52d8df9f-95ed-424b-9c19-c440b8f1f141">
+      <active>true</active>
+      <description>FMC Screen Brightnes Key 9</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="KeyInputAction" key="Ctrl+Shift+D9" />
+        </analog>
+        <preconditions>
+          <precondition type="config" active="true" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" operand="=" value="9" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="False" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+    <config guid="90651b6a-41b4-4584-b4d4-c1123d52ae3d">
+      <active>true</active>
+      <description>FMC Screen Brightnes Key 10</description>
+      <settings msdata:InstanceType="MobiFlight.InputConfigItem, MFConnector, Version=9.1.0.3, Culture=neutral, PublicKeyToken=null" serial="CJ4-lights/ SN-046-7c0" name="Lighting Knob" type="Analog" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <analog>
+          <onChange type="KeyInputAction" key="Ctrl+Shift+D0" />
+        </analog>
+        <preconditions>
+          <precondition type="config" active="true" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" operand="=" value="10" logic="and" />
+        </preconditions>
+        <configrefs>
+          <configref active="False" ref="1ebe9bd1-1190-45a9-8033-2a8654e923c1" placeholder="#" />
+        </configrefs>
+      </settings>
+    </config>
+  </inputs>
+</MobiflightConnector>
