@@ -36,6 +36,9 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; This seems to help to get coordinates right when you have 4K or high DPI screens.
+DllCall("SetThreadDpiAwarenessContext", "ptr", -3, "ptr")
+
 Gui, Destroy
 intensity:=50 ; should be middle ground (0-100 percent multiplier)
 minimum:=150   ;(transparency of the overlay, 0 = totally black, 255 = no darkening)
