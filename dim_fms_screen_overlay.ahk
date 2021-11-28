@@ -15,11 +15,13 @@
 ; 3. Right click the script and choose "run script", which starts AutoHotkey
 ;    and places it in the task bar icon tray area. Test that it works ()
 ;
-; 4. Set up MobiFlight to either generate Ctrl-Shift-plus/minus keystrokes
-;    from an encoder, or tie it to a potentiometer.
+; 4. Optionally set up MobiFlight to either generate Ctrl-Shift-plus/minus
+;    keystrokes from an encoder, or tie it to a potentiometer.
 ;
 ;    Potentiometer is a bit more involved because we can only send one
-;    keystroke. Thus we need to create several input 
+;    keystroke regardless of the potentiometer value currently. Thus we 
+;    need to add several lines and only match the correct potentiometer
+;    value for each. A mcc file is provided as an example.
 ;    
 
 #Persistent
