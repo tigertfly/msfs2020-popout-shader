@@ -9,8 +9,8 @@
 ;    package manager from commandline: winget install "AutoHotkey Store Edition"
 ;
 ; 2. Save this script somewhere like C:\AutoHotkeyScripts\ and edit the
-;    screen coordinates (multiple monitors virtual size) to where you 
-;    put your poput window. Save.
+;    screen coordinates (see "EDIT" below) to where you put your poput 
+;    window. Save.
 ;
 ; 3. Right click the script and choose "run script", which starts AutoHotkey
 ;    and places it in the task bar icon tray area. Test that it works ()
