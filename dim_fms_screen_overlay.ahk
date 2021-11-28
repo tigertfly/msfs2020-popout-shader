@@ -5,6 +5,11 @@
 ; Ctrl-Shift-[numbers] where number 1 is most dimmed, and 0 means no 
 ; dimming at all, and 2-9 are varying brightness in between.
 ;
+; This is based on snippets found on autohotkey forum, and I am placing
+; this under public domain in good faith assuming it's ok, given that
+; the original authors have also shared their ideas for others to use
+; and modify.
+;
 ; 1. Get AutoHotkey from https://www.autohotkey.com/ or from the Windows
 ;    package manager from commandline: winget install "AutoHotkey Store Edition"
 ;
